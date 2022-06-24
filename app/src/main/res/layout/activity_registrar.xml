@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login2"
+    tools:context=".registrar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="372dp"
+        android:layout_height="681dp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="133dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="4dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/agricultor" />
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="#30020202"
+            android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+            android:hint=" Nombres"
+            android:padding="10dp"
+            android:textColorHint="#1C1B1B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="#30020202"
+            android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+            android:ems="10"
+            android:hint=" Apellidos"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#1C1B1B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+        <EditText
+            android:id="@+id/numero_celular"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="#30020202"
+            android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+            android:ems="10"
+            android:hint=" Numero Celular"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColorHint="#1C1B1B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="#30020202"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:ems="10"
+            android:hint=" Contraseña"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#1C1B1B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numero_celular" />
+
+        <EditText
+            android:id="@+id/confirmarcontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="#30020202"
+            android:drawableLeft="@drawable/ic_key"
+            android:ems="10"
+            android:hint=" Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#1C1B1B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contraseña" />
+
+        <Button
+            android:id="@+id/iniciarSesionBtn"
+            android:layout_width="262dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/diseno"
+            android:drawableRight="@drawable/ic_baseline_login_24"
+            android:onClick="perfil3"
+            android:padding="10dp"
+            android:text="@string/btn_registrarse_sesion"
+            app:layout_constraintBottom_toTopOf="@+id/textView25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmarcontrasena" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="204dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="67dp"
+            android:text=" ¿Ya tienes cuenta?"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iniciarSesionBtn" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="143dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="67dp"
+            android:onClick="inicia"
+            android:text="@string/iniciar_sesion"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/iniciarSesionBtn"
+            app:layout_constraintVertical_bias="0.444" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
